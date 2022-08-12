@@ -105,4 +105,13 @@
   width: 5% !important;
 }
 
+.paginationNumbers a {
+  box-sizing: content-box;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .pagination a:hover:not(.active) {background-color: #ddd;}
