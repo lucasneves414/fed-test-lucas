@@ -1,4 +1,26 @@
-# [Q4 Inc.](https://q4inc.com/)
+## My Step By Step To Solve This
+
+The first thing to notice after running `$npm start` was that only the title was showing.
+So I went to the browser console and noticed an error in a file called `main.js`.
+
+Then, on VS Code, I press CRTL-P and type `main.js`.
+
+There I notice a `+` missing on the concatenation of the `options.template`.
+
+After re-running the project, it was already possible to see the objects, but without styling.
+Taking a look at the `main.css` file, I noticed that some classes and ids were ready to be used.
+
+The id `q4Wrapper` was being used to style the component and all its children.
+So I just needed to find the right place to put it. And that was in the `index.html` in the `div` on line 15.
+
+After re-running the project, most of the css was ready. I needed to work on the responsiveness mainly.
+Talking about this part, I was confused by the prompt that said `Consider how the page will scale as more reports are added over time.`
+I couldn't figure out if this means I should change something in the css.
+
+So I decided to make a simple pagination. As I don't work much with Mustache or Vanilla, I had a lot to research, but I could do it.
+
+
+Below are the original `reade.me` with the instructions and requests.
 
 ## Front-end Developer Assessment
 
