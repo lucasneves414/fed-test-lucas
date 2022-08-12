@@ -34,18 +34,24 @@
 }
 #q4Wrapper article img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
 }
 #q4Wrapper a {
   display: inline-block;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 #q4Wrapper a:hover {
   transform: scale(1.05);
 }
 #q4Wrapper a span {
   opacity: 0.5;
+}
+
+.layout{
+  background-color: #2A3035
 }
 
 .layout_inner {
@@ -60,5 +66,49 @@
 
 /* Begin styling the report items here! */
 .reports {
-
+  text-align: center;
 }
+
+.reports_item {
+  display: inline-block;
+    margin: 30px;
+    width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .reports_item {
+    display: inline-table;
+    margin: 5%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .reports_item {
+    margin: 10%;
+    width: 80%;
+  }
+}
+
+.pagination {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  width: 5% !important;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
